@@ -22,3 +22,17 @@ public class TestingAppApplication implements CommandLineRunner
         System.out.println("The Data is : "+ dataService.getData());
     }
 }
+
+
+// via maven
+//mvn spring-boot:run -Dspring-boot.run.profiles=prod
+
+//via jar file
+// java -jar app.jar --spring.profiles.active=dev
+
+// via env variables
+// set SPRING_PROFILES_ACTIVE=dev
+// java -jar app.jar
+
+// through IDE
+// currnt file -> edit conf -> app -> env variables -> SPRING_PROFILES_ACTIVE=dev
